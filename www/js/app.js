@@ -17,3 +17,12 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+    .config(function ($stateProvider, $urlRouterProvider) {
+        $stateProvider
+            .state('contacts', {
+                url: '/contacts',
+                templateUrl: 'templates/contacts.html'
+            })
+
+        $urlRouterProvider.otherwise('/contacts');
+    });
