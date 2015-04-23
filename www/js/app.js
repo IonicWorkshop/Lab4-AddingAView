@@ -21,7 +21,8 @@ angular.module('starter', ['ionic'])
         $stateProvider
             .state('contacts', {
                 url: '/contacts',
-                templateUrl: 'templates/contacts.html'
+                templateUrl: 'templates/contacts.html',
+                controller: 'ContactsCtrl'
             })
 
         $urlRouterProvider.otherwise('/contacts');
