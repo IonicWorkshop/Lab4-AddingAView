@@ -1,6 +1,11 @@
 <ion-view title="Contacts">
     <ion-content>
         <ion-list>
+            <ion-item ng-repeat="contact in contacts">
+                <img ng-src="{{contact.user.picture.thumbnail}}">
+                <p>{{contact.user.name.first}}</p>
+                <p>{{contact.user.email}}</p>
+            </ion-item>
             <pre>{{ contacts | json }}</pre>
         </ion-list>
     </ion-content>
